@@ -1,0 +1,203 @@
+Week 1 Assigment: Variables Exercises
+1. Simple Variable Assignment
+Task: Create a variable x and assign the value 10 to it. Print the value of x.
+x = 10
+print(x)
+
+2. Assigning Different Data Types
+Task: Create variables of different data types:
+
+Integer: age = 25
+Float: height = 5.9
+String: name = "John"
+Boolean: is_active = True
+Print all the variables.
+age = 25
+height = 5.9
+name = "John"
+is_active = True
+print(age, height, name, is_active)
+
+3. Simple Addition
+Task: Create two variables, a and b, and assign them integer values. Calculate their sum and print the result.
+a = 5
+b = 7
+print(a + b)
+
+4. String Concatenation
+Task: Create two string variables, first_name = "Alice" and last_name = "Wonderland". Concatenate them to create a full name and print the result.
+first_name = "Alice"
+last_name = "Wonderland"
+full_name = first_name + " " + last_name
+print(full_name)
+
+5. Variable Type Check
+Task: Create a variable x = "Hello". Check and print the type of x using the type() function.
+x = "Hello"
+print(type(x))
+
+6. Swap Two Variables
+Task: Create two variables a = 10 and b = 5. Swap their values without using a temporary variable. Print the new values of a and b.
+a = 10
+b = 5
+a, b = b, a
+print(a, b)
+
+7. Arithmetic Operations
+Task: Create two variables x = 15 and y = 4. Perform addition, subtraction, multiplication, division, and modulus operations. Print the results.
+x = 15
+y = 4
+print(x + y, x - y, x * y, x / y, x % y)
+
+8. Multiple Variable Assignment
+Task: Assign values to multiple variables in a single line:
+x = 1, y = 2, z = 3
+Print the values of all three variables.
+x, y, z = 1, 2, 3
+print(x, y, z)
+
+9. Updating Variable Values
+Task: Create a variable counter = 10. Increase its value by 5 using an assignment operation (+=). Then decrease its value by 3 (-=). Print the final value of counter.
+counter = 10
+counter += 5
+counter -= 3
+print(counter)
+
+10. Variable Re-Assignment
+Task: Create a variable x = 100. Reassign its value to x = 50. Print the new value of x.
+x = 100
+x = 50
+print(x)
+
+11. User Input and Variable Assignment
+Task: Use the input() function to assign the user's name to a variable and print a greeting message with the user's name.
+name = input("Enter your name: ")
+print(f"Hello, {name}!")
+
+12. String to Integer Conversion
+Task: Create a string variable num_str = "42". Convert it to an integer and print the result.
+num_str = "42"
+num = int(num_str)
+print(num)
+
+13. Integer to String Conversion
+Task: Create an integer variable num = 100. Convert it to a string and print the result.
+num = 100
+num_str = str(num)
+print(num_str)
+
+14. Working with Lists
+Task: Create a list fruits = ["apple", "banana", "cherry"]. Assign the first element of the list to a variable favorite_fruit and print it.
+fruits = ["apple", "banana", "cherry"]
+favorite_fruit = fruits[0]
+print(favorite_fruit)
+
+15. String Length
+Task: Create a string variable message = "Hello, Python!". Assign the length of the string to a variable length and print it.
+message = "Hello, Python!"
+length = len(message)
+print(length)
+
+16. Floating-Point Arithmetic
+Task: Create two floating-point variables a = 3.14 and b = 2.71. Add them together, subtract them, and multiply them. Print the results.
+a = 3.14
+b = 2.71
+print(a + b, a - b, a * b)
+
+17. Combining Strings with Variables
+Task: Create variables first_name = "John" and last_name = "Doe". Use string concatenation to print Hello, John Doe!.
+first_name = "John"
+last_name = "Doe"
+print(f"Hello, {first_name} {last_name}!")
+
+18. String Formatting with f-strings
+Task: Create variables age = 25 and name = "Alice". Use an f-string to print: "My name is Alice and I am 25 years old."
+age = 25
+name = "Alice"
+print(f"My name is {name} and I am {age} years old.")
+
+19. Constants Convention
+Task: Define a constant PI = 3.14159. Print the value of PI and explain why constants are written in uppercase.
+PI = 3.14159
+print(PI)
+# Constants are written in uppercase to signify their fixed nature and importance in the code.
+
+20. Working with Dictionaries
+Task: Create a dictionary person = {"name": "Alice", "age": 25}. Assign the value of "age" from the dictionary to a variable age_value and print it.
+person = {"name": "Alice", "age": 25}
+age_value = person["age"]
+print(age_value)
+
+21. Using Global and Local Variables
+Task: Create a global variable x = 10. In a function, assign a new value to x (locally) and print both the local and global values of x.
+x = 10
+
+def modify_variable():
+    x = 20
+    print("Local x:", x)
+
+modify_variable()
+print("Global x:", x)
+
+22. Swapping Values with Pythonic Method
+Task: Swap the values of two variables x = 5 and y = 10 using Python's multiple assignment feature. Print the new values of x and y.
+x, y = 5, 10
+x, y = y, x
+print(x, y)
+
+23. Boolean Expressions
+Task: Create two boolean variables is_sunny = True and is_raining = False. Print a message based on the result of is_sunny and is_raining.
+is_sunny = True
+is_raining = False
+if is_sunny and not is_raining:
+    print("It's a sunny day!")
+elif not is_sunny and is_raining:
+    print("It's raining.")
+else:
+    print("Weather is unpredictable.")
+
+24. Typecasting Multiple Variables
+Task: Create a variable x = "100", y = "50", and z = "30". Convert all of them to integers and print their sum.
+x, y, z = "100", "50", "30"
+total = int(x) + int(y) + int(z)
+print(total)
+
+25. Modifying String Values
+Task: Create a string variable sentence = "Python is awesome". Replace the word "awesome" with "cool" and print the modified string.
+sentence = "Python is awesome"
+sentence = sentence.replace("awesome", "cool")
+print(sentence)
+
+26. Complex Variable Assignment
+Task: Create a variable person = {"name": "Bob", "age": 30}. Assign the value of "name" to a variable person_name and "age" to person_age. Print both variables.
+person = {"name": "Bob", "age": 30}
+person_name = person["name"]
+person_age = person["age"]
+print(person_name, person_age)
+
+27. Using Variables in Functions
+Task: Create a function greet(name) that takes a string argument name and prints "Hello, <name>!". Call the function with your name.
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Lunyolo")
+
+28. Counting Occurrences
+Task: Create a string text = "apple apple banana apple". Count how many times the word "apple" appears in the string and store it in a variable apple_count. Print the count.
+text = "apple apple banana apple"
+apple_count = text.count("apple")
+print(apple_count)
+
+29. Working with Multiple Variables in a Function
+Task: Write a function add_numbers(a, b) that takes two numbers and returns their sum. Call the function with the arguments a = 5 and b = 7 and store the result in a variable result. Print result.
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(5, 7)
+print(result)
+
+30. Using Variables in Lists and Loops
+Task: Create a list numbers = [1, 2, 3, 4, 5]. Use a for loop to multiply each number by 2, and store the results in a new list doubled_numbers. Print the doubled_numbers list.
+numbers = [1, 2, 3, 4, 5]
+doubled_numbers = [num * 2 for num in numbers]
+print(doubled_numbers)
